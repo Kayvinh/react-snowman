@@ -79,10 +79,10 @@ function Snowman({
       <div className="Snowman">
         <img src={(images)[nWrong]} alt={`guess left ${maxWrong} - ${nWrong}`} />
         <div data={nWrong} className="numWrong">Number wrong: {nWrong}</div>
-        {/* {TODO: nWrong < maxWrong} */}
+
         {nWrong <= maxWrong ? <p className="Snowman-word">{guessedWord()}</p> : `You lose: ${answer}`}
         {nWrong <= maxWrong && <p className="btns">{generateButtons()}</p>}
-        {/* <p>{generateButtons()}</p> */}
+
       </div>
   );
 }
